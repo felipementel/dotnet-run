@@ -1,11 +1,11 @@
-#!/home/felipementel/.dotnet/dotnet run
+﻿#!/home/felipementel/.dotnet/dotnet run
 #:sdk Microsoft.NET.Sdk.Web
 #:package Microsoft.AspNetCore.OpenApi@10.*-*
 #:package Microsoft.AspNetCore.Http@2.3.*-*
 #:package Scalar.AspNetCore@2.6.*-*
 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Hthttp:
+using Microsoft.AspNetCore.Hthttp;
 using System.Text.Json.Serialization;
 using Scalar.AspNetCore;
 
