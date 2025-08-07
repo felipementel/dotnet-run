@@ -3,7 +3,8 @@
 #:package Microsoft.AspNetCore.Http@2.3.*-*
 #:package Scalar.AspNetCore@2.6.*-*
 
-#:property Version 1.2.3
+#:property Version=1.2.3
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Text.Json.Serialization;
@@ -25,7 +26,7 @@ app.MapScalarApiReference();
 app.MapGet("/", () => "Canal DEPLOY");
 app.MapGet("/user/{id}", ([FromRoute] string id) =>
 {
-    return TypedResults.Ok(new CanalDEPLOYUser { Nome = $"user {id}", Chave = $"{id}" });
+    return TypedResults.Ok(new CanalDEPLOYUser { Nome = $"user", Chave = $"User ID: {id}" });
 });
 
 await app.RunAsync();
